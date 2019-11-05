@@ -35,9 +35,11 @@ func initRoutes(router *mux.Router, formatter *render.Render) {
 			webRoot = root
 		}
 	}
-	router.HandleFunc("/", homePageHandler(formatter));
-	router.HandleFunc("/login", loginHandler(formatter))
+	
+	router.HandleFunc("/", homePageHandler(formatter)).Methods("GET")
+	router.HandleFunc("/signin", loginHandler(formatter)).Methods("GET")
+	router.HandleFunc("/userInfo", userInfoHandler(formatter)).Methods("POST")
 	router.HandleFunc("/api/test", apiTestHandler(formatter)).Methods("GET")
-	router.PathPrefix("/static").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(webRoot+"/assets"))))
+	router.PathPrefix("/static").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(webRoot+"/assets/"))))
 	router.HandleFunc("/unknown", NotImplementedHandler()).Methods("GET")
 }
