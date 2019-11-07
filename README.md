@@ -1,8 +1,8 @@
 # CloudGo-io
 
-> 一个极其简单的web服务程序
->
-> [参考博客1](https://blog.csdn.net/pmlpml/article/details/78404838 )	[参考博客2](https://blog.csdn.net/pmlpml/article/details/78539261 )
+一个极其简单的web服务程序
+
+[参考博客1](https://blog.csdn.net/pmlpml/article/details/78404838 )	[参考博客2](https://blog.csdn.net/pmlpml/article/details/78539261 )
 
 #### 使用方式
 
@@ -43,11 +43,11 @@ Negroni 是Web 中间件，是一个具备微型、非嵌入式、鼓励使用�
 
 #### 测试
 
-> 测试环境：Windows 10 版本号1903
->
-> 运行终端：Windows Terminal (Preview)
->
-> 测试方式：浏览器访问
++ 测试环境：Windows 10 版本号1903
+
++ 运行终端：Windows Terminal (Preview)
+
++ 测试方式：浏览器访问
 
 ##### 启动
 
@@ -59,7 +59,7 @@ Negroni 是Web 中间件，是一个具备微型、非嵌入式、鼓励使用�
 
 ##### 静态资源
 
-在`static`文件夹中添加了`.html`文件后，就会显示如下网页，而不是资源列表：
+在`static`文件夹中添加了`.html`文件后，就会显示如下网页，而不是资源列表
 
 该页面在加载时，会通过`Ajax`请求` http://localhost:7777/api/test `，得到作者（我）的姓名和ID。
 
@@ -97,7 +97,7 @@ Negroni 是Web 中间件，是一个具备微型、非嵌入式、鼓励使用�
 
 #### AB压力测试
 
-AB的全称为Apache Bench，是Apache自带的网络压力测试工具， 用以测试HTTP请求的服务器性能,也是业界比较流行和简单易用的一种压力测试工具包。
+AB的全称为Apache Bench，是Apache自带的网络压力测试工具， 用以测试HTTP请求的服务器性能，也是业界比较流行和简单易用的一种压力测试工具包。
 
 测试结果如下：
 
@@ -105,5 +105,5 @@ AB的全称为Apache Bench，是Apache自带的网络压力测试工具， 用�
 
 ##### 参数解释
 
-+ -n requests：在测试会话中所执行的请求总个数
++ -n requests：在测试会话中所执行的请求总个数；
 + -c concurrency：一次产生的请求个数。默认是一次一个。 
