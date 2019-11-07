@@ -2,11 +2,11 @@
 
 > 一个极其简单的web服务程序
 >
-> [参考博客1](https://blog.csdn.net/pmlpml/article/details/78404838 )、[参考博客2](https://blog.csdn.net/pmlpml/article/details/78539261 )
+> [参考博客1](https://blog.csdn.net/pmlpml/article/details/78404838 )	[参考博客2](https://blog.csdn.net/pmlpml/article/details/78539261 )
 
 #### 使用方式
 
-```go
+```/
 // download CloudGo-io
 go get github.com/DanielXuuuuu/CloudGo-io
 
@@ -45,6 +45,8 @@ Negroni 是Web 中间件，是一个具备微型、非嵌入式、鼓励使用�
 
 > 测试环境：Windows 10 版本号1903
 >
+> 运行终端：Windows Terminal (Preview)
+>
 > 测试方式：浏览器访问
 
 ##### 启动
@@ -62,6 +64,10 @@ Negroni 是Web 中间件，是一个具备微型、非嵌入式、鼓励使用�
 该页面在加载时，会通过`Ajax`请求` http://localhost:7777/api/test `，得到作者（我）的姓名和ID。
 
 ![](./img/static.png)
+
+我们通过curl工具访问，可以看的更清楚
+
+![](./img/curl.png)
 
 查看`static/css`文件夹
 
@@ -96,3 +102,8 @@ AB的全称为Apache Bench，是Apache自带的网络压力测试工具， 用�
 测试结果如下：
 
 ![](./img/ab_test.png)
+
+##### 参数解释
+
++ -n requests：在测试会话中所执行的请求总个数
++ -c concurrency：一次产生的请求个数。默认是一次一个。 
