@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(43, 49, 55)
+}
+
+#head{
+    height: 60px;
+    background-color: rgb(36, 41, 46);
+}
+
+#head p{
+    color: white;
+    width: 200px;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+#main{
+    width: 400px;
+    height: 500px;
+    margin: 70px auto;
+    padding: 50px 70px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#main table{
+    width: 400px;
+    margin:auto;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#main table th{
+    height: 80px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#main table td{
+    padding-left: 10px;
+    text-align: left;
+}
+
+button{
+    margin-top: 90px;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 370px;
+    height: 80px;
+    background-color: rgb(40, 167, 69);
+}
+
+button:hover{
+    background-color: rgb(42, 145, 28);
+    cursor: pointer; 
+}
