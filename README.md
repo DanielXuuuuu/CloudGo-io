@@ -37,7 +37,7 @@ go run main.go [-p]
 
 [negroni](https://github.com/urfave/negroni)
 
-实际上，Negroni不是一个框架，它是为了方便使用 `net/http` 而设计的一个库而已。 
+实际上，Negroni不是一个框架，它是为了方便使用 `net/http` 而设计的一个库而已。由于本次作业中使用Negroni已经可以实现全部功能，我就没有使用框架。 
 
 Negroni 是Web 中间件，是一个具备微型、非嵌入式、鼓励使用原生 `net/http` 库特征的中间件。 
 
